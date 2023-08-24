@@ -6,4 +6,4 @@ resources:
   - ../../../base/ingress.yaml
 
 patches:
-  - patch1.yaml
+  - path: patch1.yaml
