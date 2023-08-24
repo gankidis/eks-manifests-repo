@@ -4,6 +4,7 @@ metadata:
   name: sample-app
   labels:
     app: sample-app-1
+    env: dev
 spec:
   replicas: 7
   template:
