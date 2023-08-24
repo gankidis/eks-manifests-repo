@@ -1,0 +1,14 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: tenant1-app
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/gankidis/eks-manifests-repo.git
+    targetRevision: HEAD
+    path: overlays/dev/tenant1
+  destination:
+    server: "https://kubernetes.default.svc"
+    namespace: tenant1
