@@ -2,9 +2,12 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: sample-app
+  labels:
+    app: sample-app-1
 spec:
   replicas: 7
   template:
     spec:
       containers:
         - name: nginx-container
+          image: nginx:1.3
