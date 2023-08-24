@@ -3,4 +3,11 @@ kind: Deployment
 metadata:
   name: sample-app
 spec:
-  replicas: 6
+  replicas: 1
+  template:
+    spec:
+      containers:
+        - name: nginx-container
+          env:
+            - name: test
+              value: 1
