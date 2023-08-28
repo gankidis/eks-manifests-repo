@@ -11,8 +11,8 @@ spec:
     path: overlays/dev/tenant2
   destination:
     server: "https://kubernetes.default.svc"
-    namespace: tenant2
+    namespace: dev-tenant-2
   syncPolicy:
-    automated:
-      prune: true
+    automated: 
+     prune: true
       selfHeal: true

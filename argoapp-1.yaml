@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: tenant5-app
+  name: tenant2-app
   namespace: argocd
 spec:
   project: default
@@ -11,6 +11,12 @@ spec:
     path: overlays/dev/tenant1
   destination:
     server: "https://kubernetes.default.svc"
-    namespace: tenant5
+    namespace: dev-tenant-1
   syncPolicy:
-    automated: {}
+    automated:
+      prune: true
+      selfHeal: true
+  preSync:
+    hooks:
+      - name: maintenance-ingress
+        hookType: Sync

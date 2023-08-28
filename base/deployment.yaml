@@ -1,21 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: sample-app
-  labels:
-    app: sample-app-1
+  name: PLACEHOLDER_DEPLOYMENT_NAME
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: sample-app
+      app: PLACEHOLDER_APP_LABEL
   template:
     metadata:
       labels:
-        app: sample-app
+        app: PLACEHOLDER_APP_LABEL
     spec:
       containers:
-        - name: nginx-container
-          image: nginx:1.2
+        - name: PLACEHOLDER_CONTAINER_NAME
+          image: PLACEHOLDER_CONTAINER_IMAGE
           ports:
             - containerPort: 80
