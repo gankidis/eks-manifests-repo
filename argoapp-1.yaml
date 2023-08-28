@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: tenant2-app
+  name: tenant1-app
   namespace: argocd
 spec:
   project: default
@@ -16,7 +16,3 @@ spec:
     automated:
       prune: true
       selfHeal: true
-  preSync:
-    hooks:
-      - name: maintenance-ingress
-        hookType: Sync

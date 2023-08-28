@@ -5,9 +5,9 @@ resources:
 namePrefix: tenant1-
 commonLabels:
   app: tenant1-app
-patchesJson6902:
+patches:
   - target:
       group: apps
       version: v1
       kind: Deployment
-    path: deploymment-patch.json
+    path: deployment-patch.json
