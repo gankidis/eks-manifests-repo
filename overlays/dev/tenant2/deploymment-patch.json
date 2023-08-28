@@ -1,0 +1,27 @@
+[
+  {
+    "op": "replace",
+    "path": "/metadata/name",
+    "value": "deployment"
+  },
+  {
+    "op": "replace",
+    "path": "/spec/selector/matchLabels/app",
+    "value": "app"
+  },
+  {
+    "op": "replace",
+    "path": "/spec/template/metadata/labels/app",
+    "value": "app"
+  },
+  {
+    "op": "replace",
+    "path": "/spec/template/spec/containers/0/name",
+    "value": "container"
+  },
+  {
+    "op": "replace",
+    "path": "/spec/template/spec/containers/0/image",
+    "value": "nginx:latest"
+  }
+]
