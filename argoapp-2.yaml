@@ -13,6 +13,6 @@ spec:
     server: "https://kubernetes.default.svc"
     namespace: tenant2
   syncPolicy:
-    automated: 
-     prune: true
+    automated:
+      prune: true
       selfHeal: true

@@ -13,7 +13,7 @@ spec:
         app: sample-app
     spec:
       containers:
-        - name: nginx-image
+        - name: container-image
           image: PLACEHOLDER_CONTAINER_IMAGE
           ports:
             - containerPort: 80
