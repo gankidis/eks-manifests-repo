@@ -9,15 +9,12 @@ patches:
       group: apps
       version: v1
       kind: Deployment
-      name: deployment
   - path: service-patch.json
     target:
       version: v1
       kind: Service
-      name: service
   - path: ingress-patch.json
     target:
       group: networking.k8s.io
       version: v1
       kind: Ingress
-      name: ingress
