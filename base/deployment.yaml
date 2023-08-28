@@ -1,19 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  namespace: PLACEHOLDER_NAMESPACE
   name: deployment
 spec:
-  replicas: PLACEHOLDER_REPLICA
   selector:
     matchLabels:
-      app: sample-app
+      app.kubernetes.io/name: app
+  replicas: PLACEHOLDER_REPLICAS
   template:
     metadata:
       labels:
-        app: sample-app
+        app.kubernetes.io/name: app
     spec:
       containers:
-        - name: container-image
-          image: PLACEHOLDER_CONTAINER_IMAGE
+        - image: PLACEHOLDER_IMAGE
+          imagePullPolicy: Always
+          name: app
           ports:
             - containerPort: 80
