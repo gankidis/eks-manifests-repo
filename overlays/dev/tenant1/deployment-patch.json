@@ -2,22 +2,22 @@
   {
     "op": "replace",
     "path": "/metadata/name",
-    "value": "tenant1-deployment"
+    "value": "deployment"
   },
   {
     "op": "replace",
     "path": "/spec/selector/matchLabels/app",
-    "value": "tenant1-app"
+    "value": "app"
   },
   {
     "op": "replace",
     "path": "/spec/template/metadata/labels/app",
-    "value": "tenant1-app"
+    "value": "app"
   },
   {
     "op": "replace",
     "path": "/spec/template/spec/containers/0/name",
-    "value": "tenant1-container"
+    "value": "container"
   },
   {
     "op": "replace",

@@ -11,7 +11,7 @@ spec:
     path: overlays/dev/tenant1
   destination:
     server: "https://kubernetes.default.svc"
-    namespace: dev-tenant-1
+    namespace: tenant1
   syncPolicy:
     automated:
       prune: true
