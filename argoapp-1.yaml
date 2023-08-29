@@ -16,11 +16,3 @@ spec:
     automated:
       prune: true
       selfHeal: true
-  hooks:
-    preSync:
-      - name: apply-maintenace-ingress-patch
-        hookType: PreSync
-        script:
-          command: ["/bin/bash", "-c"]
-          args:
-            - kubectl kustomize ./maintenace | kubectl apply -f -

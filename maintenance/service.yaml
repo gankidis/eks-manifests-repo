@@ -3,6 +3,9 @@ kind: Service
 metadata:
   name: maintenance-service
   namespace: PLACEHOLDER_NAMESPACE
+  annotations:
+    argocd.argoproj.io/hook: PreSync
+    argocd.argoproj.io/hook-delete-policy: HookSucceeded
 spec:
   selector:
     app: maintenance-app
