@@ -3,18 +3,21 @@ kind: Deployment
 metadata:
   name: maintenance-deploymment
   namespace: PLACEHOLDER_NAMESPACE
+  annotations:
+    argocd.argoproj.io/sync-wave: "-10"
+
 spec:
   replicas: 1
   selector:
     matchLabels:
       app: maintenance-app
   template:
-    metadata: 
+    metadata:
       labels:
         app: maintenance-app
     spec:
       containers:
         - name: maintenace-container
-          image: maintenance-image: tag
+          image: httpd:latest
           ports:
             - containerPort: 80
