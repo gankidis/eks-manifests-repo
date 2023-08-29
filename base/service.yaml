@@ -1,8 +1,8 @@
 apiVersion: v1
 kind: Service
 metadata:
-  namespace: PLACEHOLDER-NAMESPACE
-  name: service
+  namespace: PLACEHOLDER_NAMESPACE
+  name: service-2048
 spec:
   ports:
     - port: 80
@@ -10,4 +10,4 @@ spec:
       protocol: TCP
   type: NodePort
   selector:
-    app: nginx
+    app.kubernetes.io/name: app-2048
