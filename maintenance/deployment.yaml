@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: maintenance-deploymment
+  namespace: PLACEHOLDER_NAMESPACE
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: maintenance-app
+  template:
+    metadata: 
+      labels:
+        app: maintenance-app
+    spec:
+      containers:
+        - name: maintenace-container
+          image: maintenance-image: tag
+          ports:
+            - containerPort: 80
