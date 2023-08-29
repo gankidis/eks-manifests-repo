@@ -12,8 +12,6 @@ spec:
   destination:
     server: "https://kubernetes.default.svc"
     namespace: tenant1
-  hooks:
-    - name: Presync-hook
   syncPolicy:
     automated:
       prune: true
