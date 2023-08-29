@@ -5,9 +5,8 @@ resources:
   - service.yaml
   - ingress.yaml
 patches:
-   - path: ingress-patch-maintenance.json
+  - path: ingress-patch-maintenance.json
     target:
       group: networking.k8s.io
       version: v1
       kind: Ingress
-
