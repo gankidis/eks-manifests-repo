@@ -16,3 +16,12 @@ spec:
     automated:
       prune: true
       selfHeal: true
+  hooks:
+    - name: pre-sync
+      beforeSync:
+        - command: ["my-pre-sync-script.sh"]
+          workingDir: /app
+    - name: post-sync
+      afterSync:
+        - command: ["my-post-sync-script.sh"]
+          workingDir: /app

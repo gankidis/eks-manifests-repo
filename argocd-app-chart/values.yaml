@@ -1,0 +1,4 @@
+appName: my-app-name
+repoURL: https://github.com/gankidis/eks-manifests-repo.git
+path: overlays/dev/tenant1
+tenantNamespace: tenant1
