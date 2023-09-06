@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: maintenance-deploymment
+  namespace: PLACEHOLDER_NAMESPACE
+  annotations:
+    argocd.argoproj.io/hook: PostSync
+    argocd.argoproj.io/hook-delete-policy: HookSucceeded
+    argocd.argoproj.io/hook-wait: true
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: maintenance-app
+  template:
+    metadata:
+      labels:
+        app: maintenance-app
+    spec:
+      containers:
+        - name: maintenace-container
+          image: httpd:latest
+          ports:
+            - containerPort: 80
