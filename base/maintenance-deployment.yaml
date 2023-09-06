@@ -3,10 +3,9 @@ kind: Deployment
 metadata:
   name: maintenance-deploymment
   namespace: PLACEHOLDER_NAMESPACE
-    annotations:
-      argocd.argoproj.io/hook: PostSync
-      argocd.argoproj.io/hook-delete-policy: HookSucceeded
-
+  annotations:
+    argocd.argoproj.io/hook: PostSync
+    argocd.argoproj.io/hook-delete-policy: HookSucceeded
 spec:
   replicas: 1
   selector:
