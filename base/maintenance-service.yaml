@@ -4,7 +4,8 @@ metadata:
   name: maintenance-service
   namespace: PLACEHOLDER_NAMESPACE
   annotations:
-    argocd.argoproj.io/sync-wave: "-10"
+    argocd.argoproj.io/hook: PreSync
+    argocd.argoproj.io/hook-delete-policy: HookSucceeded
 spec:
   selector:
     app: maintenance-app
