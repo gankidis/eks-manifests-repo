@@ -3,15 +3,5 @@
     "op": "replace",
     "path": "/metadata/namespace",
     "value": "main-test"
-  },
-  {
-    "op": "replace",
-    "path": "/metadata/name",
-    "value": "community-web"
-  },
-  {
-    "op": "replace",
-    "path": "/spec/selector/name",
-    "value": "community-web"
   }
 ]
