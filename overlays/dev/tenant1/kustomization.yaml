@@ -20,10 +20,6 @@ patches:
       version: v1
       kind: Deployment
       name: community-web
-  - path: service-patch.json
-    target:
-      version: v1
-      kind: Service
   - path: service-post-sync-patch.json
     target:
       version: v1
