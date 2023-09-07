@@ -12,6 +12,6 @@
   {
     "op": "replace",
     "path": "/spec/template/spec/containers/0/image",
-    "value": "public.ecr.aws/l6m2t8p7/docker-2048:latest"
+    "value": "nginx:latest"
   }
 ]
