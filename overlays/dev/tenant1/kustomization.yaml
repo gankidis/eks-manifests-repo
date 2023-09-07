@@ -13,3 +13,4 @@ patches:
     target:
       version: v1
       kind: Service
+      name: community-web
