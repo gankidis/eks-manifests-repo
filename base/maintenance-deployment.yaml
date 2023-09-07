@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: maintenance-deploymment
+  name: maintenance-deployment
   namespace: PLACEHOLDER_NAMESPACE
   annotations:
     argocd.argoproj.io/hook: PreSync

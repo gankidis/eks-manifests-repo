@@ -9,6 +9,7 @@ patches:
       group: apps
       version: v1
       kind: Deployment
+      name: deployment-2048
   - path: service-patch.json
     target:
       version: v1
@@ -18,3 +19,9 @@ patches:
       group: networking.k8s.io
       version: v1
       kind: Ingress
+  - path: deployment-maintenance-pre-sync-patch.json
+    target:
+      group: apps
+      version: v1
+      kind: Deployment
+      name: maintenance-deployment
