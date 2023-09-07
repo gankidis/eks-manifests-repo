@@ -21,3 +21,5 @@ spec:
           name: community-web
           ports:
             - containerPort: 80
+          args:
+            - arg1

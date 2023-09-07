@@ -12,6 +12,11 @@
   {
     "op": "replace",
     "path": "/spec/template/spec/containers/0/image",
-    "value": "httpd:latest"
+    "value": "hashicorp/http-echo"
+  },
+  {
+    "op": "replace",
+    "path": "/spec/containers/0/args",
+    "value": ["-text=banana"]
   }
 ]
