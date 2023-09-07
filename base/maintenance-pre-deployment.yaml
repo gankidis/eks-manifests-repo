@@ -5,7 +5,6 @@ metadata:
   namespace: PLACEHOLDER_NAMESPACE
   annotations:
     argocd.argoproj.io/hook: PreSync
-    argocd.argoproj.io/hook-delete-policy: HookSucceeded
     argocd.argoproj.io/hook-wait: true
 spec:
   replicas: 1
