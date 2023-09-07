@@ -5,7 +5,6 @@
     "value": {
       "argocd.argoproj.io/hook": "PostSync",
       "argocd.argoproj.io/hook-wait": "true"
-      //"argocd.argoproj.io/hook-delete-policy": "HookSucceeded"
     }
   },
   {
