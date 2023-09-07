@@ -1,23 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: maintenance-deployment
+  name: community-maintenance
   namespace: PLACEHOLDER_NAMESPACE
-  annotations:
-    argocd.argoproj.io/hook: PreSync
-    argocd.argoproj.io/hook-wait: true
 spec:
   replicas: 0
   selector:
     matchLabels:
-      app: maintenance-app
+      app: community-maintenance
   template:
     metadata:
       labels:
-        app: maintenance-app
+        app: community-maintenance
     spec:
       containers:
-        - name: maintenace-container
+        - name: community-maintenance
           image: httpd:latest
           ports:
             - containerPort: 80

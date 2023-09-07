@@ -11,17 +11,8 @@ spec:
     path: overlays/dev/tenant1
   destination:
     server: "https://kubernetes.default.svc"
-    namespace: tenant1
+    namespace: main-test
   syncPolicy:
     automated:
       prune: true
       selfHeal: true
-  hooks:
-    - name: pre-sync
-      beforeSync:
-        - command: ["my-pre-sync-script.sh"]
-          workingDir: /app
-    - name: post-sync
-      afterSync:
-        - command: ["my-post-sync-script.sh"]
-          workingDir: /app

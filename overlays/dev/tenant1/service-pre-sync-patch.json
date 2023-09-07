@@ -1,11 +1,11 @@
 [
   {
-    "op": "replace",
+    "op": "add",
     "path": "/metadata/annotations",
     "value": {
-      "argocd.argoproj.io/hook": "PreSync",
+      "argocd.argoproj.io/hook": "Presync",
       "argocd.argoproj.io/hook-wait": "true",
-      "argocd.argoproj.io/hook-order": "-2"
+      "argocd.argoproj.io/hook-order": "-1"
     }
   },
   {
@@ -15,7 +15,7 @@
   },
   {
     "op": "replace",
-    "path": "/spec/replicas",
-    "value": 2
+    "path": "/spec/selector/name",
+    "value": "community-maintenance"
   }
 ]
