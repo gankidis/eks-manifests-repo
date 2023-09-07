@@ -12,6 +12,6 @@
   {
     "op": "replace",
     "path": "/spec/template/spec/containers/0/image",
-    "value": "hello-world"
+    "value": "nginx:latest"
   }
 ]
