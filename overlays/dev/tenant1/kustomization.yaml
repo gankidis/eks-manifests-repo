@@ -9,21 +9,17 @@ patches:
       version: v1
       kind: Deployment
       name: community-maintenance
-  - path: service-pre-sync-patch.json
-    target:
-      group: apps
-      version: v1
-      kind: Service
   - path: deployment-patch.json
     target:
       group: apps
       version: v1
       kind: Deployment
       name: community-web
-  - path: service-post-sync-patch.json
+  - path: service-patch.json
     target:
       version: v1
       kind: Service
+
   - path: deployment-maintenance-post-sync-patch.json
     target:
       group: apps
