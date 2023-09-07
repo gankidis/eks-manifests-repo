@@ -3,6 +3,17 @@ kind: Kustomization
 resources:
   - ../../../base
 patches:
+  - path: deployment-maintenance-pre-sync-patch.json
+    target:
+      group: apps
+      version: v1
+      kind: Deployment
+      name: community-maintenance
+  - path: service-pre-sync-patch.json
+    target:
+      group: apps
+      version: v1
+      kind: Service
   - path: deployment-patch.json
     target:
       group: apps
@@ -13,32 +24,3 @@ patches:
     target:
       version: v1
       kind: Service
-  - path: ingress-patch.json
-    target:
-      group: networking.k8s.io
-      version: v1
-      kind: Ingress
-  - path: deployment-maintenance-pre-sync-patch.json
-    target:
-      group: apps
-      version: v1
-      kind: Deployment
-      name: maintenance-deployment
-  - path: deployment-maintenance-pre-sync-patch.json
-    target:
-      group: apps
-      version: v1
-      kind: Deployment
-      name: maintenance-deployment
-  - path: service-maintenance-post-sync-patch.json
-    target:
-      group: apps
-      version: v1
-      kind: Service
-      name: service-maintenance
-  - path: service-maintenance-post-sync-patch.json
-    target:
-      group: apps
-      version: v1
-      kind: Service
-      name: service-maintenance

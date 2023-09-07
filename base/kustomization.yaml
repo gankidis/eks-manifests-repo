@@ -4,4 +4,3 @@ resources:
   - deployment.yaml
   - service.yaml
   - maintenance-deployment.yaml
-  - maintenance-service.yaml
