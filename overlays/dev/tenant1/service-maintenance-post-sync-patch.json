@@ -3,19 +3,14 @@
     "op": "replace",
     "path": "/metadata/annotations",
     "value": {
-      "argocd.argoproj.io/hook": "PreSync",
+      "argocd.argoproj.io/hook": "PostSync",
       "argocd.argoproj.io/hook-wait": "true"
       //"argocd.argoproj.io/hook-delete-policy": "HookSucceeded"
     }
   },
   {
     "op": "replace",
-    "path": "/metadata/namespace",
-    "value": "tenant1"
-  },
-  {
-    "op": "replace",
-    "path": "/spec/replicas",
-    "value": 2
+    "path": "/spec/rules/0/http/paths/0/backend/service/name",
+    "value": "service"
   }
 ]
