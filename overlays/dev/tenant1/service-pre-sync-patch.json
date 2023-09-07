@@ -15,6 +15,11 @@
   },
   {
     "op": "replace",
+    "path": "/metadata/name",
+    "value": "community-maintenance"
+  },
+  {
+    "op": "replace",
     "path": "/spec/selector/name",
     "value": "community-maintenance"
   }
