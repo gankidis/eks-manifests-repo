@@ -2,7 +2,7 @@
   {
     "op": "replace",
     "path": "/metadata/namespace",
-    "value": "tenant1"
+    "value": "main-test"
   },
   {
     "op": "replace",
