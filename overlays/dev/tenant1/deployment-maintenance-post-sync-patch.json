@@ -4,8 +4,7 @@
     "path": "/metadata/annotations",
     "value": {
       "argocd.argoproj.io/hook": "Postsync",
-      "argocd.argoproj.io/hook-wait": "true",
-      "argocd.argoproj.io/hook-delete-policy": "HookSucceeded"
+      "argocd.argoproj.io/hook-wait": "true"
     }
   },
   {
