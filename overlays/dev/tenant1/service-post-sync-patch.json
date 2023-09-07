@@ -1,0 +1,27 @@
+[
+  {
+    "op": "add",
+    "path": "/metadata/annotations",
+    "value": {
+      "argocd.argoproj.io/hook": "Postsync",
+      "argocd.argoproj.io/hook-wait": "true",
+      "argocd.argoproj.io/hook-order": "1",
+      "argocd.argoproj.io/hook-delete-policy": "HookSucceeded"
+    }
+  },
+  {
+    "op": "replace",
+    "path": "/metadata/namespace",
+    "value": "main-test"
+  },
+  {
+    "op": "replace",
+    "path": "/metadata/name",
+    "value": "community-web"
+  },
+  {
+    "op": "replace",
+    "path": "/spec/selector/name",
+    "value": "community-web"
+  }
+]
