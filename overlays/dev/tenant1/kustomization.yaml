@@ -24,13 +24,13 @@ patches:
       version: v1
       kind: Deployment
       name: maintenance-deployment
-  - path: deployment-maintenance-post-sync-patch.json
+  - path: deployment-maintenance-pre-sync-patch.json
     target:
       group: apps
       version: v1
       kind: Deployment
       name: maintenance-deployment
-  - path: service-maintenance-pre-sync-patch.json
+  - path: service-maintenance-post-sync-patch.json
     target:
       group: apps
       version: v1
