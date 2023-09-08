@@ -15,7 +15,7 @@
     "value": "hashicorp/http-echo"
   },
   {
-    "op": "replace",
+    "op": "add",
     "path": "/spec/containers/0/args",
     "value": ["-text=banana"]
   }
