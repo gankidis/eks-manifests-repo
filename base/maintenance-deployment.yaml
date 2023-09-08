@@ -16,7 +16,7 @@ spec:
         app: community-maintenance
     spec:
       containers:
-        - image: httpd
+        - image: hello-world
           imagePullPolicy: Always
           name: community-maintenance
           ports:
