@@ -12,11 +12,6 @@
   {
     "op": "replace",
     "path": "/spec/template/spec/containers/0/image",
-    "value": "hashicorp/http-echo"
-  },
-  {
-    "op": "add",
-    "path": "/spec/containers/0/args",
-    "value": ["-text=banana"]
+    "value": "bedis9/colors"
   }
 ]
