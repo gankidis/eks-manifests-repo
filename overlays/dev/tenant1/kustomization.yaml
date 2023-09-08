@@ -3,6 +3,12 @@ kind: Kustomization
 resources:
   - ../../../base
 patches:
+  - path: deployment-maintenance-pre-sync-patch.json
+    target:
+      group: apps
+      version: v1
+      kind: Deployment
+      name: community-maintenance
   - path: deployment-patch.json
     target:
       group: apps
@@ -14,3 +20,9 @@ patches:
       version: v1
       kind: Service
       name: community-web
+  - path: deployment-maintenance-post-sync-patch.json
+    target:
+      group: apps
+      version: v1
+      kind: Deployment
+      name: community-maintenance

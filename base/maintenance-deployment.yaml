@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: PLACEHOLDER_NAMESPACE
+  name: community-maintenance
+  labels:
+    app: community-maintenance
+spec:
+  selector:
+    matchLabels:
+      app: community-web
+  replicas: PLACEHOLDER_REPLICAS
+  template:
+    metadata:
+      labels:
+        app: community-maintenance
+    spec:
+      containers:
+        - image: httpd
+          imagePullPolicy: Always
+          name: community-maintenance
+          ports:
+            - containerPort: 80
