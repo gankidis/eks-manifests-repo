@@ -12,6 +12,6 @@
   {
     "op": "replace",
     "path": "/spec/template/spec/containers/0/image",
-    "value": "bedis9/colors"
+    "value": "nginx:latest"
   }
 ]

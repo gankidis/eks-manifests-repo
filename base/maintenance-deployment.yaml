@@ -8,7 +8,7 @@ metadata:
 spec:
   selector:
     matchLabels:
-      app: community-web
+      app: community-maintenance
   replicas: PLACEHOLDER_REPLICAS
   template:
     metadata:
@@ -16,8 +16,8 @@ spec:
         app: community-maintenance
     spec:
       containers:
-        - image: PLACEHOLDER_IMAGE
+        - image: httpd:latest
           imagePullPolicy: Always
-          name: community-web
+          name: community-maintenance
           ports:
             - containerPort: 80
