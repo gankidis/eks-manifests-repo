@@ -3,9 +3,7 @@
     "op": "add",
     "path": "/metadata/annotations",
     "value": {
-      "argocd.argoproj.io/hook": "Postsync",
-      "argocd.argoproj.io/hook-wait": "true",
-      "argocd.argoproj.io/hook-order": "2"
+      "argocd.argoproj.io/hook": "Postsync"
     }
   },
   {
