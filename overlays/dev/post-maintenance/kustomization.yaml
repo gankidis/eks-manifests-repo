@@ -2,13 +2,13 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
   - deployment-maintebabce-post-sync-patch.json
-  - service-post-sync-patch.json
+  #- service-post-sync-patch.json
 patches:
-  - path: service-post-sync-patch.json
-    target:
-      version: v1
-      kind: Service
-      name: community-web
+  #- path: service-post-sync-patch.json
+  #  target:
+  #    version: v1
+  #    kind: Service
+  #    name: community-web
   - path: deployment-maintenance-pre-sync-patch.json
     target:
       group: apps
